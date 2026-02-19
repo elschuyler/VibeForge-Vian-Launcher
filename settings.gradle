@@ -1,4 +1,7 @@
 pluginManagement {
+    plugins {
+        id 'net.ltgt.errorprone' version '4.1.0'
+    }
     repositories {
         google {
             content {
@@ -19,5 +22,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KISS"
+rootProject.name = "VibeForge Vian Launcher"
 include ':app'
+Root build.gradle — replace everything with:
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
