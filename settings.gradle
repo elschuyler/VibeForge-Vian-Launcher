@@ -24,7 +24,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "VibeForge Vian Launcher"
 include ':app'
-Root build.gradle — replace everything with:
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
