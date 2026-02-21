@@ -156,7 +156,7 @@ public class InterfaceTweaks extends Forwarder {
     }
 
     private static void applySystemBarInsets(View view) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
             view.setOnApplyWindowInsetsListener((v, insets) -> {
                 Insets systemBars = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.ime());
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
