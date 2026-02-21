@@ -90,7 +90,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
             removePreference("icons-section", DrawableUtils.KEY_THEMED_ICONS);
         }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
             removePreference("colors-section", "notification-bar-color");
         }
         if (!ShortcutUtil.canDeviceShowShortcuts()) {
